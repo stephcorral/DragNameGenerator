@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+
     <title>DNG Form</title>
+    <style>
+      table, th, tr, td {
+        border: 1px solid purple;
+        border-collapse: collapse;
+      }
+      table{
+        margin-left: auto;
+        margin-right: auto;
+      }     
+    </style>
 </head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Drag Name Generator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="form.html">Questions</a></li>
+              <li><a class="dropdown-item" href="results.html">Drag Her</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <body>
     <h1>Time to Find Your Drag Name</h1>
+    <table>
+      <tr>
+        <th>Questions</th>
+      </tr>
+      <tr>
+        <td>What is your last meal wish?</td>
+        <td><input id="lastMeal" name="lastName" /></td>
+      </tr>
+      <tr>
+        <td>What is your least enjoyed color?</td>
+        <td><input id="blahColor" name="blahColor"/></td>
+      </tr>
+      <tr>
+        <td>What is your favorite Seasoning?</td>
+        <td><input id="seasoning" name="seasoning"/></td>
+      </tr>
+        
+    </table>
     
+
+    <button type="button" onclick="createName()">Generate Drag Name</button>
+    <script src="./script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

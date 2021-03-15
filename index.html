@@ -5,26 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Drag Name Generator</title>
 
+
 </head>
-<nav>
-    <h1>Drag Name Generator</h1>
-    <ul>
-        <li>Questions</li>
-        <li>Answers</li>
-    </ul>
-</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Drag Name Generator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="form.html">Questions</a></li>
+              <li><a class="dropdown-item" href="results.html">Drag Her</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 <body>
     <h2>Why?</h2>
     <p>Ever struggle to find a name for your alter-ego? We are here for you Lynda.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qFgA31VlNWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <h2>Want to Get some Weird Content Emailed to you...</h2>
+    <div class="main_container">
+        <div class="form_container">
+            
+            <form class="form" method="post" action="re" id="form">
+                <div class="field_container">
+                    <input type="text" id="email" placeholder="Email" pattern="^[a-zA-Z0-9_.-]*$[a-zA-Z_.-]*$" required/> 
+                </div>
+                <div class="field_container">
+                    <input type="date" id="date" min="79-01-01" max="2000-03-13" placeholder="Are you Baby?" required/>
+                </div>
+                <div id="button_container">
+                    <input type="submit" onclick="subscribe()" value="Subcribe"/>
+                </div>
+            </form>
+        </div>
+    </div>
     <p>Mother is here to give you want you need</p>
 
 
     <button type="button"><a href="form.html">I am Ready!</a></button>
-
+    <script src="script/script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
+<!-- HTML
+
+Have at least 3 pages, keep the grid system consistent as much as possible===DONE
+Use at least 10 different HTML tags===DONE
+Use HTML tables===DONE
+Implement at least two uses for forms
+Dropped Down Menu === DONE
+Use web fonts=== DONE
+Use different types of content in the form of text, images, videos, and GIFs
+Use regex validation---DONE
+CSS
+
+Inline, internal, and external styling
+Use five different CSS selectors
+Don’t use too many fonts
+Use colors that complement each other
+Use Flexbox (Optional)
+Use SASS/SCSS (Optional)
+Use animations (Optional)
+Javascript
+
+External scripts
+Use variables, if statements, loops, at least one form of collections, functions/call back, and events -->

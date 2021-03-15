@@ -1,0 +1,28 @@
+nav{
+    font-family: 'Russo One', sans-serif;
+}
+body{
+    background-color: seashell;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: row;
+}
+li{
+    display: inline;
+}
+
+
+/* li{
+    display: inline;
+}
+h1{
+    display: inline-block;
+}
+ul{
+    display: inline;
+} */
+
